@@ -1,0 +1,17 @@
+.form
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blueviolet;
+    height: 50px;
+}
+.button{
+    border-radius: 100px;
+    border: 0px solid black;
+    background-color: inherit;
+}
+.input{
+    border-radius: 10px;
+    border: 1px solid yellow;
+}

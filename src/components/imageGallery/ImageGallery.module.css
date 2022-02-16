@@ -1,0 +1,6 @@
+.list__photos
+{
+    display: flex;
+    flex-wrap: wrap;
+    
+}

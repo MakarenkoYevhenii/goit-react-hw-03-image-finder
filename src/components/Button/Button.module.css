@@ -1,0 +1,10 @@
+.btnLoadMore{
+ background-color: blue;
+ border: 1px solid black;
+ height: 50px;
+}
+.btnArea{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
