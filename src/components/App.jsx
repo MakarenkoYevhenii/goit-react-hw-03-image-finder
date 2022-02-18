@@ -29,7 +29,9 @@ class App extends Component {
   }
 
   onSubmit = e => {
+    
     this.setState({
+      posts:[],
       search: e.query,
     });
   };
