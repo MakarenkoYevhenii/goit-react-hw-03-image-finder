@@ -1,5 +1,7 @@
 import styles from '../Modal/Modal.module.css';
 import { Component } from 'react';
+import PropTypes from 'prop-types';
+
 // import { createPortal } from "react-dom";
 // const modalRoot = document.getElementById("modal-root")
 
@@ -13,6 +15,7 @@ class modal extends Component  {
     }
 
     close = (e)=> {
+        console.log(this.props);
         console.log(e);
         if(e.code === "Escape") {
             return this.props.handleClose();
@@ -31,3 +34,9 @@ class modal extends Component  {
     )};
 }
 export default modal;
+
+
+modal.propTypes={
+    image:PropTypes.string.isRequired,
+    handleClose:PropTypes.func.isRequired
+  }

@@ -1,4 +1,5 @@
 import styles from '../ImageGalleryItem/ImageGalleryItem.module.css'
+import PropTypes from 'prop-types';
 
 
 const imageGalleryItem = ({picture,handleClick}) => {
@@ -10,3 +11,11 @@ const imageGalleryItem = ({picture,handleClick}) => {
 }
 
 export default imageGalleryItem
+
+imageGalleryItem.propTypes={
+  picture:PropTypes.shape({
+    largeImageURL:PropTypes.string.isRequired
+  }).isRequired,
+  handleClick:PropTypes.func.isRequired
+
+}
